@@ -71,21 +71,23 @@ class HomePage extends StatelessWidget {
                 color: Colors.white,
                 borderRadius: BorderRadius.all(Radius.circular(10)),
               ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Container(
-                    margin: EdgeInsets.only(bottom: 20),
-                    child: Text(
-                      'Desarrollo de Aplicaciones Móviles',
-                      style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Color(0xFF333333)),
+              child: SingleChildScrollView(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                      margin: EdgeInsets.only(bottom: 20),
+                      child: Text(
+                        'Desarrollo de Aplicaciones Móviles',
+                        style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Color(0xFF333333)),
+                      ),
                     ),
-                  ),
-                  Text(
-                    kTextoDemo,
-                    textAlign: TextAlign.justify,
-                  ),
-                ],
+                    Text(
+                      kTextoDemo,
+                      textAlign: TextAlign.justify,
+                    ),
+                  ],
+                ),
               ),
             ),
           ),
