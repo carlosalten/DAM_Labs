@@ -78,6 +78,10 @@ class JuegosController extends Controller
      */
     public function conCantidadMantenimientos()
     {
-        return Juego::orderBy('nombre')->withCount('mantenimientos as cantidad_mantenimientos')->get();
+        return Juego::orderBy('nombre')
+            ->withCount('mantenimientos as cantidad_mantenimientos')
+            ->get()
+            ->load('categoria')
+            ->makeHidden('categoria_id');
     }
 }
