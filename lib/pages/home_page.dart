@@ -137,12 +137,12 @@ class HomePage extends StatelessWidget {
 class _FooterPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
-    final paint = new Paint();
+    final paint = Paint();
     paint.color = Color(kError);
     paint.style = PaintingStyle.fill;
     paint.strokeWidth = 10;
 
-    final path = new Path();
+    final path = Path();
     print(size);
     path.moveTo(0, size.height * 0.4);
     path.lineTo(0, size.height);
